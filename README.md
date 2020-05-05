@@ -122,11 +122,11 @@ And here's the comparison of old/existing and new. The expected differences betw
 If you like the look of the new certificate, right-click to paste the correctly-formatted "Assign-CsCertificate" command to make it active.
 &nbsp;
 ## <span style="font-size: 1.17em;">Script Revision History
-### v1.3: 12th May 2018
+#### v1.3: 12th May 2018
 
 - Added an abort line that kills the script when running in the (unsupported) PowerShell ISE. (Screen-width and coloured output don't work)
 
-### v1.2: 24th December 2017
+#### v1.2: 24th December 2017
 
 - Improved the way the "Subject" is parsed in ParseCertSubject by trimming leading spaces
 
@@ -136,7 +136,7 @@ If you like the look of the new certificate, right-click to paste the correctly-
 
 - Incorporated my version of Pat's "Get-UpdateInfo". Credit: https://ucunleashed.com/3168
 
-### v1.1: 19th February 2017 - the "Thank You Mike Shivtorov" bugfix & suggestions release
+#### v1.1: 19th February 2017 - the "Thank You Mike Shivtorov" bugfix & suggestions release
 
 - Added 'XmppServer' certificate type, overlooked in the original release
 
@@ -152,9 +152,16 @@ If you like the look of the new certificate, right-click to paste the correctly-
 
 - Fixed bug where KeySize was reported in red instead of yellow when the user provided a new value
 
-### v1.0: 7th May 2016. Initial public release
+#### v1.0: 7th May 2016. Initial public release
 
 - Improved the error reporting when Request-CsCertificate fails
 
 &nbsp;
-&ndash; G.
+
+<br>
+
+\- G.
+
+<br>
+
+This script was originally published at [https://greiginsydney.com/update-sfbcertificate-ps1/](https://greiginsydney.com/update-sfbcertificate-ps1/).
