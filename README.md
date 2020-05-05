@@ -65,9 +65,13 @@ Lync &amp; Skype for Business need their PKI certificates refreshed occasionally
 <pre>PS C:\&gt; .\Update-SfBCertificate.ps1 -type default,webservicesinternal,webservicesexternal -Verbose -FriendlyName "Combined SYD Pool FE cert 27Apr2017" -ca MyCA.contoso.com\My-CA -Thumbprint "?12 34 56 78 90 12 34 45 78 89" -Domain "OverlookedSAN.contoso.com"</pre>
 <h3>Show me</h3>
 <p>Here I&rsquo;m requesting a new default,webservicesinternal,webservicesexternal certificate for my Front-End. I&rsquo;m providing the details of the CA, specifying a new Friendly Name, making sure the City comes out as &ldquo;Sydney&rdquo;, adding all SIP  Domains, all FE&rsquo;s in the pool, and adding SANs for meet.contoso &amp; meet.fabrikam:</p>
-<p><img id="184221" src="https://i1.gallery.technet.s-msft.com/update-sfbcertificate-b2fa60f3/image/file/184221/1/update-sfbcertificate-confirm.png" alt="" width="100%" /></p>
+
+<img src="https://user-images.githubusercontent.com/11004787/81052514-e606c300-8f06-11ea-8832-66672dfebe29.png" alt="" width="600" />
+
 <p>The script pauses at this point. On-screen (to the left of the green bar here) are all the values that will be fed into &ldquo;Request-CsCertificate&rdquo; if you agree to the Confirm prompt at the bottom.</p>
-<p><img id="184222" src="https://i1.gallery.technet.s-msft.com/update-sfbcertificate-b2fa60f3/image/file/184222/1/update-sfbcertificate-comparison.png" alt="" width="100%" /></p>
+
+<img src="https://user-images.githubusercontent.com/11004787/81052556-ffa80a80-8f06-11ea-9235-0dd42098206e.png" alt="" width="600" />
+
 <p>And here's the comparison of old/existing and new. The expected differences between them are highlighted in yellow. Any that aren't expected are shown in red (or whatever your Warning and Error colour preferences are set to, respectively).</p>
 <p>If you like the look of the new certificate, right-click to paste the correctly-formatted "Assign-CsCertificate" command to make it active.</p>
 <p>&nbsp;</p>
